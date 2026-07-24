@@ -1,0 +1,1 @@
+Replace placeholder boxes with your images in assets and edit index.html.
