@@ -1,6 +1,6 @@
-/*==========================================
-    GOOGLE FONT & RESET
-==========================================*/
+/* ===========================
+   GENERAL
+=========================== */
 
 *{
     margin:0;
@@ -14,24 +14,272 @@ html{
 
 body{
 
-    font-family:'Inter',sans-serif;
-
-    background:#FAFAFA;
-
-    color:#1A1A1A;
-
-    line-height:1.6;
-
+    font-family:"Inter",sans-serif;
+    background:#f6f6f6;
+    color:#222;
 }
 
 
-/*==========================================
-    HERO
-==========================================*/
+/* ===========================
+   HERO
+=========================== */
 
 .hero{
 
-    height:100vh;
+    text-align:center;
+
+    padding:70px 20px 40px;
+}
+
+.hero h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+}
+
+.hero p{
+
+    margin-top:10px;
+
+    color:#777;
+
+    font-size:18px;
+}
+
+
+
+/* ===========================
+   PROJECT
+=========================== */
+
+.project{
+
+    width:min(1100px,92%);
+
+    margin:auto;
+
+    text-align:center;
+
+    padding-bottom:80px;
+}
+
+
+.project-number{
+
+    display:block;
+
+    color:#9c9c9c;
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+}
+
+
+.project h2{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+}
+
+
+.project-category{
+
+    color:#777;
+
+    margin-bottom:35px;
+}
+
+
+
+/* ===========================
+   3D VIEWER
+=========================== */
+
+.viewer{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    height:470px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+
+model-viewer{
+
+    width:100%;
+
+    height:100%;
+}
+
+
+.viewer-info{
+
+    margin-top:15px;
+
+    color:#888;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+}
+
+
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+}
+
+
+.gallery-item{
+
+    width:220px;
+}
+
+
+.gallery-item img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+
+.gallery-item img:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+
+.gallery-item span{
+
+    display:block;
+
+    margin-top:14px;
+
+    font-weight:500;
+
+    color:#555;
+}
+
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    color:#999;
+
+    font-size:14px;
+}
+
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.hero h1{
+
+    font-size:34px;
+}
+
+.project h2{
+
+    font-size:34px;
+}
+
+.viewer{
+
+    height:380px;
+}
+
+.gallery-item{
+
+    width:170px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero{
+
+    padding-top:50px;
+}
+
+.viewer{
+
+    height:300px;
+}
+
+.gallery{
+
+    gap:15px;
+}
+
+.gallery-item{
+
+    width:140px;
+}
+
+}
+
+/* ===========================
+   LIGHTBOX
+=========================== */
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
 
     display:flex;
 
@@ -41,122 +289,96 @@ body{
 
     align-items:center;
 
-    text-align:center;
+    opacity:0;
 
-    padding:40px;
+    visibility:hidden;
 
-}
+    transition:.35s;
 
-.hero h1{
+    z-index:9999;
 
-    font-size:58px;
-
-    font-weight:700;
-
-    letter-spacing:-2px;
-
-    margin-bottom:18px;
+    padding:30px;
 
 }
 
-.hero p{
+.lightbox.active{
 
-    font-size:22px;
+    opacity:1;
 
-    color:#777777;
-
-    font-weight:400;
+    visibility:visible;
 
 }
 
+.lightbox img{
 
-/*==========================================
-    PROJECT
-==========================================*/
+    max-width:90%;
 
-.project{
+    max-height:80vh;
 
-    max-width:1200px;
+    border-radius:12px;
 
-    margin:auto;
+    box-shadow:0 20px 60px rgba(0,0,0,.5);
 
-    padding:120px 30px;
+    transform:scale(.92);
 
-}
-
-
-.viewer{
-
-    width:100%;
-
-    height:650px;
-
-    background:white;
-
-    border-radius:22px;
-
-    overflow:hidden;
-
-    box-shadow:
-        0px 10px 35px rgba(0,0,0,.06);
+    transition:.35s;
 
 }
 
+.lightbox.active img{
 
-model-viewer{
-
-    width:100%;
-
-    height:100%;
+    transform:scale(1);
 
 }
 
+.lightbox p{
 
-/*==========================================
-    PROJECT INFO
-==========================================*/
+    color:white;
 
-.project-info{
+    margin-top:20px;
 
-    text-align:center;
+    font-size:18px;
 
-    margin-top:45px;
-
-}
-
-
-.project-number{
-
-    display:block;
-
-    color:#9b9b9b;
-
-    font-size:14px;
-
-    letter-spacing:3px;
-
-    margin-bottom:10px;
+    letter-spacing:1px;
 
 }
 
+.close{
 
-.project-info h2{
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    color:white;
 
     font-size:42px;
 
-    font-weight:700;
+    cursor:pointer;
 
-    margin-bottom:12px;
+    transition:.3s;
 
 }
 
+.close:hover{
 
-.project-info p{
+    transform:scale(1.15);
 
-    color:#666666;
+}
 
-    margin-bottom:35px;
+/* ========================= */
+/* Section Divider */
+/* ========================= */
 
-    font-size:18px;
+.section-divider{
+
+    width:70%;
+
+    height:1px;
+
+    background:#d9d9d9;
+
+    margin:20px auto;
 
 }

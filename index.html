@@ -6,17 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Zahid Risky Rabbani | Mechanical Design Showcase</title>
+    <title>Zahid Risky Rabbani | Mechanical Design Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Model Viewer -->
     <script type="module"
         src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
     </script>
@@ -25,27 +23,34 @@
 
 <body>
 
-    <!-- ===========================
-            HERO
-    ============================ -->
+    <!-- ================= HERO ================= -->
 
     <section class="hero">
 
         <h1>Zahid Risky Rabbani</h1>
 
-        <p>
-            Mechanical Design Showcase
-        </p>
+        <p>Mechanical Design Portfolio</p>
 
     </section>
 
+    <div class="section-divider"></div>
 
-
-    <!-- ===========================
-            PROJECT
-    ============================ -->
+    <!-- ================= PROJECT ================= -->
 
     <section class="project">
+
+        <span class="project-number">
+            PROJECT 01
+        </span>
+
+        <h2>
+            Centrifugal Pump
+        </h2>
+
+        <p class="project-category">
+            Mechanical Design
+        </p>
+
 
         <div class="viewer">
 
@@ -61,98 +66,156 @@
 
                 exposure="1"
 
-                interaction-prompt="auto">
+                interaction-prompt="none">
 
             </model-viewer>
 
         </div>
 
-
-        <div class="project-info">
-
-            <span class="project-number">
-                PROJECT 01
-            </span>
-
-            <h2>
-                Centrifugal Pump
-            </h2>
-
-            <p>
-                Mechanical Design
-            </p>
-
-            <a href="#gallery" class="button">
-
-                View Gallery ↓
-
-            </a>
-
-        </div>
-
-    </section>
+        <p class="viewer-info">
+            Rotate • Zoom • Pan
+        </p>
 
 
 
+        <!-- Gallery -->
 
-    <!-- ===========================
-            GALLERY
-    ============================ -->
+        <div class="gallery">
 
-    <section class="gallery" id="gallery">
+            <div class="gallery-item">
 
-        <div class="gallery-item">
+                <img
+                    src="assets/centrifugal-pump/cover.png"
+                    alt="Isometric View">
 
-            <img
-                src="assets/centrifugal-pump/render1.png"
-                alt="Render 1">
+                <span>Isometric View</span>
 
-            <h3>Render 1</h3>
+            </div>
 
-        </div>
+            <div class="gallery-item">
 
+                <img
+                    src="assets/centrifugal-pump/render1.png"
+                    alt="Side View">
 
+                <span>Side View</span>
 
-        <div class="gallery-item">
+            </div>
 
-            <img
-                src="assets/centrifugal-pump/render2.png"
-                alt="Render 2">
+            <div class="gallery-item">
 
-            <h3>Render 2</h3>
+                <img
+                    src="assets/centrifugal-pump/exploded.png"
+                    alt="Exploded View">
 
-        </div>
+                <span>Exploded View</span>
 
-
-
-        <div class="gallery-item">
-
-            <img
-                src="assets/centrifugal-pump/exploded.png"
-                alt="Exploded">
-
-            <h3>Exploded View</h3>
+            </div>
 
         </div>
 
     </section>
 
+    <div class="section-divider"></div>
+
+    <section class="project">
+
+        <span class="project-number">
+            PROJECT 02
+        </span>
+
+        <h2>
+            Cyclorotor
+        </h2>
+
+        <p class="project-category">
+            Mechanical Design
+        </p>
 
 
+        <div class="viewer">
 
-    <!-- ===========================
-            FOOTER
-    ============================ -->
+            <model-viewer
+
+                src="assets/cyclorotor/model.glb"
+
+                camera-controls
+
+                auto-rotate
+
+                shadow-intensity="1"
+
+                exposure="1"
+
+                interaction-prompt="none">
+
+            </model-viewer>
+
+        </div>
+
+        <p class="viewer-info">
+            Rotate • Zoom • Pan
+        </p>
+
+        <!-- Gallery -->
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+
+                <img
+                    src="assets/cyclorotor/cover.png"
+                    alt="Isometric View">
+
+                <span>Isometric View</span>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img
+                    src="assets/cyclorotor/render1.png"
+                    alt="Side View">
+
+                <span>Side View</span>
+
+            </div>
+
+            <div class="gallery-item">
+
+                <img
+                    src="assets/cyclorotor/exploded.png"
+                    alt="Exploded View">
+
+                <span>Exploded View</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ================= FOOTER ================= -->
 
     <footer>
 
-        © 2026
-
-        Zahid Risky Rabbani
+        © 2026 Zahid Risky Rabbani
 
     </footer>
 
+    <!-- ================= LIGHTBOX ================= -->
 
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <img id="lightbox-img">
+
+        <p id="lightbox-title"></p>
+
+    </div>
 
     <script src="script.js"></script>
 
