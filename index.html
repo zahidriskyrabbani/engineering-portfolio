@@ -1,50 +1,161 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Zahid Risky Rabbani | Engineering Portfolio</title>
-<link rel="stylesheet" href="style.css">
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zahid Risky Rabbani | Mechanical Design Showcase</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Model Viewer -->
+    <script type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+
 </head>
+
 <body>
-<header>
-<div class="container nav">
-<h2>ZR</h2>
-<nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
-</div>
-</header>
 
-<section class="hero container">
-<div>
-<h1>Zahid Risky Rabbani</h1>
-<p class="sub">Mechanical Design Portfolio</p>
-<p>Designing engineering solutions through CAD, manufacturing drawings, and product development.</p>
-<a class="btn" href="#projects">View Projects</a>
-</div>
-<div class="heroimg placeholder">Hero Render<br>Replace with<br>assets/hero.jpg</div>
-</section>
+    <!-- ===========================
+            HERO
+    ============================ -->
 
-<section id="about" class="container">
-<h2>About Me</h2>
-<p>Mechanical Engineering – Universitas Gadjah Mada. Passionate about Machine Design, Autodesk Inventor, AutoCAD, and Product Development.</p>
-<div class="skills">
-<span>Autodesk Inventor</span><span>AutoCAD</span><span>Machine Design</span><span>Manufacturing Drawing</span>
-</div>
-</section>
+    <section class="hero">
 
-<section id="projects" class="container">
-<h2>Featured Projects</h2>
-<div class="grid">
-<div class="card"><div class="thumb placeholder">Project Image</div><h3>Continuous Pyrolysis Reactor</h3><p>Autodesk Inventor • 2026</p></div>
-<div class="card"><div class="thumb placeholder">Project Image</div><h3>Screw Conveyor</h3><p>Assembly Design</p></div>
-<div class="card"><div class="thumb placeholder">Project Image</div><h3>Heat Exchanger</h3><p>Mechanical Design</p></div>
-<div class="card"><div class="thumb placeholder">Project Image</div><h3>Pressure Vessel</h3><p>Fabrication Drawing</p></div>
-</div>
-</section>
+        <h1>Zahid Risky Rabbani</h1>
 
-<footer id="contact">
-<div class="container">
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
-<p>LinkedIn | GitHub</p>
-</div>
-</footer>
-</body></html>
+        <p>
+            Mechanical Design Showcase
+        </p>
+
+    </section>
+
+
+
+    <!-- ===========================
+            PROJECT
+    ============================ -->
+
+    <section class="project">
+
+        <div class="viewer">
+
+            <model-viewer
+
+                src="assets/centrifugal-pump/model.glb"
+
+                camera-controls
+
+                auto-rotate
+
+                shadow-intensity="1"
+
+                exposure="1"
+
+                interaction-prompt="auto">
+
+            </model-viewer>
+
+        </div>
+
+
+        <div class="project-info">
+
+            <span class="project-number">
+                PROJECT 01
+            </span>
+
+            <h2>
+                Centrifugal Pump
+            </h2>
+
+            <p>
+                Mechanical Design
+            </p>
+
+            <a href="#gallery" class="button">
+
+                View Gallery ↓
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ===========================
+            GALLERY
+    ============================ -->
+
+    <section class="gallery" id="gallery">
+
+        <div class="gallery-item">
+
+            <img
+                src="assets/centrifugal-pump/render1.png"
+                alt="Render 1">
+
+            <h3>Render 1</h3>
+
+        </div>
+
+
+
+        <div class="gallery-item">
+
+            <img
+                src="assets/centrifugal-pump/render2.png"
+                alt="Render 2">
+
+            <h3>Render 2</h3>
+
+        </div>
+
+
+
+        <div class="gallery-item">
+
+            <img
+                src="assets/centrifugal-pump/exploded.png"
+                alt="Exploded">
+
+            <h3>Exploded View</h3>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ===========================
+            FOOTER
+    ============================ -->
+
+    <footer>
+
+        © 2026
+
+        Zahid Risky Rabbani
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
