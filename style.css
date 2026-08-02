@@ -620,7 +620,7 @@ footer{
 
     transform:translate(-50%,-50%);
 
-    font-size:180px;
+    font-size:clamp(70px, 15vw, 180px);
 
     font-weight:800;
 
@@ -633,6 +633,8 @@ footer{
     user-select:none;
 
     white-space:nowrap;
+
+    overflow:hidden;
 
 }
 
