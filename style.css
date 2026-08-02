@@ -613,29 +613,25 @@ footer{
 .hero-bg-text{
 
     position:absolute;
+    inset:0;
 
-    top:45%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    left:50%;
-
-    transform:translate(-50%,-50%);
-
-    font-size:clamp(70px, 15vw, 180px);
+    font-size:clamp(80px,18vw,180px);
 
     font-weight:800;
-
-    letter-spacing:12px;
+    letter-spacing:8px;
 
     color:rgba(0,0,0,.025);
 
     pointer-events:none;
-
     user-select:none;
 
     white-space:nowrap;
 
-    overflow:hidden;
-
+    z-index:0;
 }
 
 /* =====================================
@@ -647,23 +643,22 @@ footer{
     /* STEP 2 - HERO */
 
     .hero{
-        min-height:100vh;
-        padding:40px 20px;
+    min-height:100svh;
+    padding:20px 15px;
     }
 
     .hero-content{
-    width:calc(100% - 30px);
-    max-width:420px;
+    width:min(92vw, 420px);
+    padding:36px 22px;
     margin:0 auto;
-    padding:45px 25px;
-    box-sizing:border-box;
-    border-radius:28px;
     }
 
-    .hero h1{
-    font-size:clamp(42px,11vw,58px);
-    line-height:.95;
-    }   
+    .hero .hero-content h1{
+    font-size:42px;
+    line-height:1.05;
+    margin-bottom:18px;
+    word-break:normal;
+    } 
 
     .hero p{
         font-size:17px;
