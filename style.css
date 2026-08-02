@@ -635,3 +635,115 @@ footer{
     white-space:nowrap;
 
 }
+
+/* =====================================
+        MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width:768px){
+
+    /* STEP 2 - HERO */
+
+    .hero{
+        min-height:100vh;
+        padding:40px 20px;
+    }
+
+    .hero-content{
+        width:100%;
+        max-width:100%;
+        padding:40px 25px;
+        border-radius:24px;
+    }
+
+    .hero h1{
+        font-size:58px;
+        line-height:.95;
+        margin:15px 0;
+    }
+
+    .hero p{
+        font-size:17px;
+        line-height:1.7;
+    }
+
+    .hero .subtitle{
+        font-size:14px;
+    }
+
+    .hero .btn{
+        margin-top:30px;
+    }
+
+
+    /* STEP 3 - PROJECT */
+
+    .project{
+        padding:70px 20px;
+    }
+
+    .project h2{
+        font-size:42px;
+    }
+
+    .project-category{
+        font-size:16px;
+    }
+
+    .project-description{
+        max-width:100%;
+        font-size:17px;
+        line-height:1.8;
+    }
+
+
+    /* STEP 4 - 3D VIEWER */
+
+    .viewer{
+        height:360px;
+        border-radius:20px;
+    }
+
+    .viewer-info{
+        font-size:15px;
+    }
+
+
+    /* STEP 5 - GALLERY */
+
+    .gallery{
+        display:flex;
+        gap:15px;
+        overflow-x:auto;
+        padding-bottom:10px;
+    }
+
+    .gallery::-webkit-scrollbar{
+        display:none;
+    }
+
+    .gallery-item{
+        min-width:160px;
+    }
+
+    .gallery-item img{
+        width:100%;
+        aspect-ratio:16/9;
+        padding:10px;
+    }
+
+
+    /* STEP 6 */
+
+    .project{
+        margin-bottom:100px;
+    }
+
+
+    /* STEP 7 */
+
+    .divider{
+        width:90%;
+    }
+
+}
