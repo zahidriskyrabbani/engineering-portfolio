@@ -650,17 +650,18 @@ footer{
     }
 
     .hero-content{
-        width:100%;
-        max-width:100%;
-        padding:40px 25px;
-        border-radius:24px;
+    width:calc(100% - 30px);
+    max-width:420px;
+    margin:0 auto;
+    padding:45px 25px;
+    box-sizing:border-box;
+    border-radius:28px;
     }
 
     .hero h1{
-        font-size:58px;
-        line-height:.95;
-        margin:15px 0;
-    }
+    font-size:clamp(42px,11vw,58px);
+    line-height:.95;
+    }   
 
     .hero p{
         font-size:17px;
@@ -672,7 +673,9 @@ footer{
     }
 
     .hero .btn{
-        margin-top:30px;
+    margin-top:28px;
+    padding:14px 30px;
+    font-size:16px;
     }
 
 
