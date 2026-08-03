@@ -139,6 +139,35 @@ body{
 
 }
 
+.menu-toggle{
+
+    display:none;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.menu-toggle:hover{
+
+    transform:scale(1.08);
+
+}
+
 .theme-toggle:hover{
 
     transform:scale(1.08);
@@ -859,6 +888,98 @@ footer{
         width:90%;
     }
 
+    .menu-toggle{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    }
+
+    .nav-links{
+
+    position:absolute;
+
+    top:75px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:0;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    max-height:0;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:
+        max-height .35s ease,
+        opacity .3s ease;
+
+    }
+
+    .nav-links.active{
+
+    max-height:220px;
+
+    opacity:1;
+
+    pointer-events:auto;
+
+    }
+
+    .nav-links li{
+
+    width:100%;
+
+    }
+
+    .nav-links a{
+
+        display:block;
+
+        padding:18px 25px;
+
+        text-align:center;
+
+        border-bottom:1px solid rgba(0,0,0,.06);
+
+    }
+
+    .nav-links li:last-child a{
+
+        border-bottom:none;
+
+    }
+
+    .navbar{
+
+        padding:14px 18px;
+
+    }
+    
+    .navbar{
+
+        gap:10px;
+
+    }
+
 }
 
 /* ===========================
@@ -1053,6 +1174,20 @@ body.dark #loader h2{
 body.dark .scroll-top{
 
     background:rgba(30,41,59,.88);
+
+}
+
+body.dark .nav-links{
+
+    background:rgba(17,24,39,.95);
+
+}
+
+body.dark .nav-links a{
+
+    color:#fff;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
 
 }
 
