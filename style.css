@@ -1049,3 +1049,80 @@ body.dark #loader h2{
     color:white;
 
 }
+
+body.dark .scroll-top{
+
+    background:rgba(30,41,59,.88);
+
+}
+
+/* ==========================
+      SCROLL TO TOP
+========================== */
+
+.scroll-top{
+
+    position:fixed;
+
+    right:28px;
+
+    bottom:28px;
+
+    width:58px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.scroll-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.scroll-top img{
+
+    width:34px;
+
+    height:34px;
+
+}
+
+.scroll-top:hover{
+
+    transform:translateY(-5px) scale(1.08);
+
+}
+
