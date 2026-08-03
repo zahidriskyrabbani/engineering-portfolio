@@ -926,11 +926,14 @@ footer{
 
     opacity:0;
 
+    transform:translateY(-12px);
+
     pointer-events:none;
 
     transition:
         max-height .35s ease,
-        opacity .3s ease;
+        opacity .3s ease,
+        transform .3s ease;
 
     }
 
@@ -939,6 +942,8 @@ footer{
     max-height:220px;
 
     opacity:1;
+
+    transform:translateY(0);
 
     pointer-events:auto;
 
@@ -973,7 +978,7 @@ footer{
         padding:14px 18px;
 
     }
-    
+
     .navbar{
 
         gap:10px;
