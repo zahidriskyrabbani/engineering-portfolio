@@ -65,13 +65,29 @@ body{
 
 .logo{
 
-    font-size:24px;
+    display:flex;
 
-    font-weight:700;
-
-    color:#111;
+    align-items:center;
 
     text-decoration:none;
+
+}
+
+.logo img{
+
+    height:42px;
+
+    width:auto;
+
+    display:block;
+
+    transition:.3s;
+
+}
+
+.logo:hover img{
+
+    transform:scale(1.08);
 
 }
 
@@ -932,5 +948,11 @@ body.dark .hero-button{
 body.dark .hero-button:hover{
 
     background:#2563eb;
+
+}
+
+body.dark .logo img{
+
+    filter:brightness(1.1);
 
 }
