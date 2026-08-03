@@ -103,6 +103,32 @@ body{
 
 }
 
+.theme-toggle{
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.theme-toggle:hover{
+
+    transform:scale(1.08);
+
+}
+
 /* ===========================
    HERO
 =========================== */
@@ -816,5 +842,95 @@ footer{
     .divider{
         width:90%;
     }
+
+}
+
+/* =========================
+        DARK MODE
+========================= */
+
+body.dark{
+
+    background:#0f172a;
+    color:#f8fafc;
+
+}
+
+body.dark .navbar{
+
+    background:rgba(17,24,39,.75);
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+body.dark .logo{
+
+    color:#fff;
+
+}
+
+body.dark .nav-links a{
+
+    color:#f8fafc;
+
+}
+
+body.dark .theme-toggle{
+
+    background:#1e293b;
+    color:#fff;
+
+}
+
+body.dark .hero-content{
+
+    background:rgba(30,41,59,.72);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+body.dark .hero h1{
+
+    color:#ffffff;
+
+}
+
+body.dark .hero p{
+
+    color:#d1d5db;
+
+}
+
+body.dark .project{
+
+    background:#111827;
+
+}
+
+body.dark .viewer{
+
+    background:#1f2937;
+
+}
+
+body.dark .gallery-item img{
+
+    background:#1f2937;
+
+}
+
+body.dark .hero-button{
+
+    background:#3b82f6;
+    color:#fff;
+
+}
+
+body.dark .hero-button:hover{
+
+    background:#2563eb;
 
 }
