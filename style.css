@@ -688,10 +688,19 @@ footer{
     /* STEP 5 - GALLERY */
 
     .gallery{
-        display:flex;
-        gap:15px;
-        overflow-x:auto;
-        padding-bottom:10px;
+    display:flex;
+    gap:15px;
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    justify-content:flex-start;
+
+    padding:10px 15px;
+
+    scroll-padding-left:15px;
+
+    -webkit-overflow-scrolling:touch;
     }
 
     .gallery::-webkit-scrollbar{
@@ -699,7 +708,13 @@ footer{
     }
 
     .gallery-item{
-        min-width:160px;
+
+    flex:0 0 auto;
+
+    width:180px;
+
+    max-width:none;
+
     }
 
     .gallery-item img{
