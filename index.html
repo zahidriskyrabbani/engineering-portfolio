@@ -26,6 +26,14 @@
 <body>
 
     <!-- ================= HERO ================= -->
+    <div id="loader">
+
+        <img src="assets/favicon.png" alt="Logo">
+
+        <h2>Engineering Portfolio</h2>
+
+    </div>
+    
     <nav class="navbar">
 
         <a href="#home" class="logo">
@@ -1136,27 +1144,7 @@
 
     </script>
 
-    <script>
-
-    const themeToggle = document.getElementById("themeToggle");
-
-    themeToggle.addEventListener("click", () => {
-
-        document.body.classList.toggle("dark");
-
-        if(document.body.classList.contains("dark")){
-
-            themeToggle.textContent = "☀️";
-
-        }else{
-
-            themeToggle.textContent = "🌙";
-
-        }
-
-    });
-
-</script>
+    <script src="script.js"></script>
 
 </body>
 

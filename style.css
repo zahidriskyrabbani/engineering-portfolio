@@ -861,6 +861,87 @@ footer{
 
 }
 
+/* ===========================
+        LOADING SCREEN
+=========================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#f8fafc;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    z-index:99999;
+
+    transition:opacity .7s ease,
+               visibility .7s ease;
+
+}
+
+#loader img{
+
+    width:95px;
+
+    animation:logoPop 1.2s ease;
+
+}
+
+#loader h2{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#222;
+
+}
+
+#loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+@keyframes logoPop{
+
+    0%{
+
+        transform:scale(.6);
+
+        opacity:0;
+
+    }
+
+    60%{
+
+        transform:scale(1.08);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
 /* =========================
         DARK MODE
 ========================= */
@@ -954,5 +1035,17 @@ body.dark .hero-button:hover{
 body.dark .logo img{
 
     filter:brightness(1.1);
+
+}
+
+body.dark #loader{
+
+    background:#0f172a;
+
+}
+
+body.dark #loader h2{
+
+    color:white;
 
 }
