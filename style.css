@@ -23,6 +23,86 @@ body{
     color:#222;
 }
 
+/*=========================
+        NAVBAR
+==========================*/
+
+.navbar{
+
+    position:fixed;
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:min(92%,1200px);
+
+    padding:15px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.8);
+
+    border-radius:18px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#111;
+
+    text-decoration:none;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#444;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#000;
+
+}
+
 /* ===========================
    HERO
 =========================== */
